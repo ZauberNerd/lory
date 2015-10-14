@@ -57,6 +57,12 @@ export default {
     classNameSlideContainer: 'js_slides',
 
     /**
+     * class name for slide elements
+     * @classNameSlide {string}
+     */
+    classNameSlide: 'js_slide',
+
+    /**
     * class name for slider prev control
      * @classNamePrevCtrl {string}
      */

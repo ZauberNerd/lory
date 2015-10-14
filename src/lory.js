@@ -179,6 +179,7 @@ export default function lory (slider, opts) {
 
         frame = slider.getElementsByClassName(options.classNameFrame)[0];
         slideContainer = frame.getElementsByClassName(options.classNameSlideContainer)[0];
+        slides = slice.call(slideContainer.getElementsByClassName(options.classNameSlide));
         prevCtrl = slider.getElementsByClassName(options.classNamePrevCtrl)[0];
         nextCtrl = slider.getElementsByClassName(options.classNameNextCtrl)[0];
 
@@ -189,8 +190,6 @@ export default function lory (slider, opts) {
 
         if (options.infinite) {
             slides = setupInfinite(slice.call(slideContainer.children));
-        } else {
-            slides = slice.call(slideContainer.children);
         }
 
         reset();
